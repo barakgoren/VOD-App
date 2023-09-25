@@ -4,9 +4,6 @@ import Carousel from 'react-bootstrap/Carousel';
 
 export default function VodStrip(props) {
   const movies = props.movies;
-  const infoStyle = {
-
-  }
   return (
       <Carousel>
         {movies.map((item) => {
