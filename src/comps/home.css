@@ -1,14 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:700,900');
+
 body {
-  background-color: rgb(73, 73, 73);
+  background-image: linear-gradient(to bottom, #380000, #c10000);
+  background-repeat: no-repeat;
+}
+
+.main-body {
+  min-height: 100vh;
 }
 .strip {
   min-height: 350px;
   background: grey;
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   background-attachment: fixed;
   display: flex;
   align-items: center;
+}
+
+.logo {
+  color: red;
+  font-family: 'Anton', sans-serif;
+  margin-top: 2%;
 }
 
 .search-input input {
@@ -17,6 +30,7 @@ body {
   border-radius: 10px;
   padding: 5px;
   margin-right: 5px;
+  color: white;
 }
 
 .search-input input:focus {
@@ -39,11 +53,13 @@ body {
   color: white;
   transition: 0.2s;
 }
+
 .strip h1 {
   color: white;
   background-color: rgba(104, 104, 104, 0.5);
   text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
 }
+
 .img-container {
   width: 100%;
   height: 100%;
@@ -53,19 +69,55 @@ body {
   object-fit: cover;
 }
 
+.movies-container {
+  overflow-x: visible;
+  overflow-x: scroll;
+}
+
+.movies-container::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.movies-container::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.item {
+  width: 10%;
+}
+.search-item {
+  width: 13.0%;
+}
+
+.item p {
+  font-size: small;
+  color: grey;
+}
+.search-item p {
+  font-size: small;
+  color: grey;
+}
+.home-btn:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 991px) {
-  .search-input{
+  .search-input {
     width: 70%;
   }
+
   .search-input input {
     width: 100%;
   }
-  .item{
+
+  .item {
     width: 33%;
   }
+
   .item h5 {
     font-size: small;
   }
+
   .item p {
     font-size: small;
   }

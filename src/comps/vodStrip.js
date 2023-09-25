@@ -5,7 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 export default function VodStrip(props) {
   const movies = props.movies;
   return (
-      <Carousel>
+      <Carousel className='mb-4'>
         {movies.map((item) => {
           return (
             <Carousel.Item key={item.backdrop_path}>
