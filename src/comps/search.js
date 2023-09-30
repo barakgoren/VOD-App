@@ -7,7 +7,7 @@ export default function Search() {
     const [query] = useSearchParams();
     useEffect(() => {
         doApi();
-    },[query])
+    }, [query])
 
     const doApi = async () => {
         const url = `https://api.themoviedb.org/3/search/movie?query=${query.get("s")}&api_key=865f8942558b315bef4a11200750484d`;
@@ -19,6 +19,9 @@ export default function Search() {
         <React.Fragment>
             <div className='body p-5 row'>
                 {movies.map((item) => {
+                    if(item.poster_path === null){
+                        return;
+                    }
                     return (
                         <SearchItem key={item.poster_path} tvItem={item} />
                     )

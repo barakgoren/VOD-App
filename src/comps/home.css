@@ -5,9 +5,25 @@ body {
   background-repeat: no-repeat;
 }
 
+.not-found {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.display-myself {
+  font-family: 'Arial', sans-serif;
+  font-weight: 300;
+  /* Light weight */
+  font-size: 1.5em;
+  line-height: 1.7;
+}
+
 .main-body {
   min-height: 100vh;
 }
+
 .strip {
   min-height: 350px;
   background: grey;
@@ -70,8 +86,7 @@ body {
 }
 
 .movies-container {
-  overflow-x: visible;
-  overflow-x: scroll;
+  overflow: scroll !important;
 }
 
 .movies-container::-webkit-scrollbar {
@@ -82,28 +97,142 @@ body {
   background-color: transparent;
 }
 
+.card-body {
+  width: fit-content;
+}
+
 .item {
   width: 10%;
+  transition: 0.5s;
+
+  .card {
+    box-shadow: 0 8px 18px 2px rgba(0, 0, 0, 0.5);
+  }
 }
+
+.item:hover {
+  transform: translatex(-2%);
+
+  .card {
+    box-shadow: 0 28px 18px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  ;
+  width: 12%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.search-item:hover {
+  transform: translatey(-12%);
+
+  .card {
+    box-shadow: 0 28px 18px 8px rgba(0, 0, 0, 0.5);
+  }
+
+  ;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
 .search-item {
   width: 13.0%;
+  transition: 0.5s;
+
+  .card {
+    box-shadow: 0 8px 18px 2px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .item p {
   font-size: small;
   color: grey;
 }
+
 .search-item p {
   font-size: small;
   color: grey;
 }
+
 .home-btn:hover {
   cursor: pointer;
 }
 
+@media (max-width:1000px) {
+  .info-page {
+    object-fit: cover;
+    margin-bottom: -460px;
+    background-attachment: fixed;
+    background-position:top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 500px !important;
+  }
+}
+
+@media (min-width:1000px) {
+  .info-page {
+    object-fit: cover;
+    margin-bottom: -150px;
+    /* background-image: url('./../pic.jpg'); */
+    background-attachment: fixed;
+    background-position: top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 500px !important;
+  }
+}
+
+
+.info-content {
+  font-size: larger;
+  line-height: 1.5em;
+  letter-spacing: 1px;
+}
+
+.info {
+  background-color: white;
+}
+
+.review-container {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.review-content {
+  font-size: 18px;
+}
+
+
+.testing {
+  background-image: linear-gradient(to bottom,
+      transparent,
+      transparent 10px,
+      /* adjust as needed */
+      rgb(255, 0, 0) 140px,
+      rgb(140, 0, 0) 100%);
+  ;
+}
+
+.info-content strong {
+  font-size: larger;
+}
+
+.info-content div {
+  margin-bottom: 2%;
+}
+
 @media (max-width: 991px) {
+.review-container span{
+  font-size: 15px;
+  line-height: 0.2em;
+}
+.review-container {
+  transform: scale(0.9);
+}
+
   .search-input {
-    width: 70%;
+    width: 55%;
   }
 
   .search-input input {

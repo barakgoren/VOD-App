@@ -1,5 +1,4 @@
 import React from 'react'
-import VodItem from './vodItem';
 import SearchItem from './searchItem';
 
 export default function VodSearch(props) {

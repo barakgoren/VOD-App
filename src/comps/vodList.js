@@ -5,9 +5,9 @@ function VodList(props) {
   const movies = props.movies;
   const category = props.category;
   return (
-    <div className='container-fluid'>
+    <div className='cat-list mb-4 container-fluid'>
       <div className="h-50">
-        <label className='display-6 mb-3 text-white fw-bold'>{category}</label>
+        <label className='list-label display-6 mb-3 text-white fw-bold'>{category}</label>
         <div className="d-flex movies-container">
           {movies.map((item) => {
             return(
