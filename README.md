@@ -1,5 +1,5 @@
-# Status: [![](https://img.shields.io/badge/Working_on_it-yellow?style=for-the-badge)](https://docs.rs/crate/redant/latest)
-Visit Live in: not yet
+# Status: [![](https://img.shields.io/badge/completed-green?style=for-the-badge)](https://docs.rs/crate/redant/latest)
+Visit Live in: https://baraks-vod-app.netlify.app/
 
 # Getting Started with Create React App
 
