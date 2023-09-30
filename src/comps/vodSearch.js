@@ -4,7 +4,7 @@ import SearchItem from './searchItem';
 export default function VodSearch(props) {
     const movies = props.movies;
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid '>
       <div className="container">
         <div className="row">
           {movies.map((item) => {

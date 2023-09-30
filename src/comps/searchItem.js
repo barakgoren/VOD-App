@@ -10,7 +10,7 @@ export default function SearchItem(props) {
         nav(`/info/${tvItem.id}`);
       }
     return (
-        <div onClick={moreInfo} className="search-item col-md-3 mb-4 me-3">
+        <div onClick={moreInfo} className="search-item col-md-3 mb-4">
             <div className="card bg-dark text-white">
                 <img src={`https://image.tmdb.org/t/p/original/${tvItem.poster_path}`} className="card-img-top" alt="Movie Title" />
                 <div className="card-body">
