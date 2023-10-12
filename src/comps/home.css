@@ -111,28 +111,19 @@ body {
 }
 
 .item:hover {
-  transform: translatex(-2%);
-
   .card {
-    box-shadow: 0 28px 18px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 18px 2px rgba(255, 255, 255, 1);
+    transition: 1s;
+    cursor: pointer;
   }
-
-  ;
-  width: 12%;
-  transition: 0.5s;
-  cursor: pointer;
 }
 
 .search-item:hover {
-  transform: translatey(-12%);
-
   .card {
-    box-shadow: 0 28px 18px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 18px 2px rgba(255, 255, 255, 1);
+    transition: 1s;
+    cursor: pointer;
   }
-
-  ;
-  transition: 0.5s;
-  cursor: pointer;
 }
 
 .search-item {
