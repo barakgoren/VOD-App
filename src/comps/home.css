@@ -97,10 +97,6 @@ body {
   background-color: transparent;
 }
 
-.card-body {
-  width: fit-content;
-}
-
 .item {
   width: 10%;
   transition: 0.5s;
