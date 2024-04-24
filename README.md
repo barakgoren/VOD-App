@@ -1,4 +1,4 @@
-[![wakatime](https://wakatime.com/badge/github/barakgoren/VOD-App.svg?)](https://wakatime.com/badge/github/barakgoren/VOD-App)
+[![wakatime](https://wakatime.com/badge/user/5cc5ec80-a806-4ca2-a704-db29274e48cd/project/22b4bb7e-4f3c-414a-be73-d7f46645fdf7.svg)](https://wakatime.com/badge/user/5cc5ec80-a806-4ca2-a704-db29274e48cd/project/22b4bb7e-4f3c-414a-be73-d7f46645fdf7)
 # Status: [![](https://img.shields.io/badge/completed-green?style=for-the-badge)](https://docs.rs/crate/redant/latest)
 Visit Live in: https://baraks-vod-app.netlify.app/
 
