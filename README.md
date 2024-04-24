@@ -1,3 +1,4 @@
+[![wakatime](https://wakatime.com/badge/github/barakgoren/VOD-App.svg?)](https://wakatime.com/badge/github/barakgoren/VOD-App)
 # Status: [![](https://img.shields.io/badge/completed-green?style=for-the-badge)](https://docs.rs/crate/redant/latest)
 Visit Live in: https://baraks-vod-app.netlify.app/
 
