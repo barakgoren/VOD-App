@@ -17,7 +17,7 @@ export default function Search() {
     }
     return (
         <React.Fragment>
-            <div className='search-list w-100 p-3 row'>
+            <div className='search-list w-100 d-flex flex-wrap justify-content-center p-3'>
                 {movies.map((item) => {
                     if(item.poster_path === null){
                         return;

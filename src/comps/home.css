@@ -213,7 +213,11 @@ body {
     margin-right: 1px !important;
   }
   .search-item p {
-    font-size: 13px !important;
+    font-size: 12px !important;
+  }
+
+  .search-item h5 {
+    font-size: 15px !important;
   }
 .review-container span{
   font-size: 15px;
@@ -229,10 +233,6 @@ body {
 
   .search-input input {
     width: 100%;
-  }
-
-  .item {
-    width: 33%;
   }
 
   .item h5 {

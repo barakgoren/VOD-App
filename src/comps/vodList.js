@@ -10,8 +10,34 @@ function VodList(props) {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 5
+    slidesToShow: 8,
+    slidesToScroll: 8,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
   }
   const movies = props.movies;
   const category = props.category;
@@ -19,7 +45,7 @@ function VodList(props) {
     <div className='cat-list mb-4 container-fluid'>
       <div className="h-50">
         <label className='list-label display-6 mb-3 text-white fw-bold'>{category}</label>
-        <div className="px-5">
+        <div className="px-4">
           <Slider {...settings}>
             {movies.map((item) => {
               return (

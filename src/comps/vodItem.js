@@ -14,7 +14,7 @@ function VodItem(props) {
       <div className="card bg-dark text-white">
         <img src={`https://image.tmdb.org/t/p/original/${tvItem.poster_path}`} className="card-img-top" alt="Movie Title" />
         <div className="card-body">
-          <h5 className="card-title">{tvItem.title.length > 30 ? `${tvItem.title.slice(0, 30)}...` : tvItem.title}</h5>
+          <h5 className="card-title">{tvItem.title.length > 15 ? `${tvItem.title.slice(0, 15)}...` : tvItem.title}</h5>
           <p className="card-text">Release Date: {year.getFullYear()}</p>
         </div>
       </div>
